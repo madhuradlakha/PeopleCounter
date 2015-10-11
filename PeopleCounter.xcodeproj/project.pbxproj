@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC0D40C01BCA4C4900C87A30 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC0D40BF1BCA4C4900C87A30 /* main.cpp */; };
+		DC0D40C71BCA593D00C87A30 /* Ctracker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC0D40C61BCA593D00C87A30 /* Ctracker.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -17,6 +18,7 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				DC0D40C71BCA593D00C87A30 /* Ctracker.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -25,6 +27,7 @@
 /* Begin PBXFileReference section */
 		DC0D40BC1BCA4C4900C87A30 /* PeopleCounter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PeopleCounter; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0D40BF1BCA4C4900C87A30 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DC0D40C61BCA593D00C87A30 /* Ctracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Ctracker.h; path = ../../Desktop/Ctracker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		DC0D40B31BCA4C4900C87A30 = {
 			isa = PBXGroup;
 			children = (
+				DC0D40C61BCA593D00C87A30 /* Ctracker.h */,
 				DC0D40BE1BCA4C4900C87A30 /* PeopleCounter */,
 				DC0D40BD1BCA4C4900C87A30 /* Products */,
 			);
@@ -205,6 +209,32 @@
 		DC0D40C41BCA4C4900C87A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/MCube/Desktop/Ctracker.h,
+					/Users/MCube/Desktop/Kalman.h,
+					/Users/MCube/Desktop/HungarianAlg.h,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +242,32 @@
 		DC0D40C51BCA4C4900C87A30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/MCube/Desktop/Ctracker.h,
+					/Users/MCube/Desktop/Kalman.h,
+					/Users/MCube/Desktop/HungarianAlg.h,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
